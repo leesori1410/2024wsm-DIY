@@ -6,13 +6,13 @@
 }
 
 .scene.one {
-    background-image: url("../image/dog1.png");
+    background-image: url("dog1.png");
 }
 .scene.two {
-    background-image: url("../image/dog2.png");
+    background-image: url("dog2.png");
 }
 .scene.three {
-    background-image: url("../image/dog3.png");
+    background-image: url("dog3.png");
 }
 .scene header {
     color: white;
