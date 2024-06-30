@@ -45,7 +45,7 @@ span {
     /* 그리드 열의 배치 3번씩(반복) 30% */
     grid-template-columns: repeat(3, 33.33%);
     /* 그리드 사이 간격주기 */
-    grid-gap: 30px;
+    /* grid-gap: 30px; */
     /* 가로 간격 */
     grid-auto-rows: 400px;
     margin-bottom: 2rem;
@@ -85,8 +85,9 @@ span {
 @media screen and (max-width: 870px) {
     .goods-container {
         display: flex;
+        grid-template-columns: repeat(2, 33.33%);
         justify-content: center;
-        /* min-width: 240px; */
+        min-width: auto;
     }
     .goods {
         width: 240px;
@@ -105,6 +106,7 @@ span {
 }
 @media screen and (max-width: 600px) {
     .goods-container {
+        grid-template-columns: repeat(1, 33.33%);
         min-width: 240px;
     }
 }
