@@ -341,4 +341,7 @@ textarea {
     .post-item:nth-child(3) {
         order: 3;
     }
+    .in {
+        margin-top: 70px;
+    }
 }
