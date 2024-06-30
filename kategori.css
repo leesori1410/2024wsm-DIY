@@ -86,6 +86,7 @@ span {
     .goods-container {
         display: flex;
         justify-content: center;
+        /* min-width: 240px; */
     }
     .goods {
         width: 240px;
@@ -100,5 +101,10 @@ span {
     }
     .goods-name1 {
         margin-right: 15%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .goods-container {
+        min-width: 240px;
     }
 }
