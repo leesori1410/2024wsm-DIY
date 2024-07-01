@@ -10,11 +10,11 @@ const showData = (data) => {
     let DivString = ""; // 'let' 추가
     data.forEach((element) => {
         if(element["category"]===categoryName){
-            DivString += `<div class="goods"><a href="${element.name}.html">
+            DivString += `<a href="${element.name}.html"><div class="goods">
                     <img src="${element.image}" alt="${element.name}" class="goods-img">
                     <div class="name">${element.name}</div>
                     <div class="hashtags">${element.hashtag}<br>${element.hashtag2}</div>
-                </a></div>\n`; // 누적 및 줄바꿈 추가
+                </div></a>\n`; // 누적 및 줄바꿈 추가
         }
     });
         
