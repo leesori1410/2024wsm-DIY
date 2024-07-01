@@ -15,10 +15,6 @@
     font-size: 2rem;
 }
 
-.left {
-    margin-left: -80px;
-}
-
 .right {
     display: flex;
     justify-content: space-between;
