@@ -221,7 +221,7 @@ main {
 }
 
 .in {
-    margin-top: 100px;
+    margin-top: 60px;
     width: 400px;
     height: 500px;
     background-color: rgb(255, 241, 168);
@@ -340,8 +340,5 @@ textarea {
     }
     .post-item:nth-child(3) {
         order: 3;
-    }
-    .in {
-        margin-top: 70px;
     }
 }
