@@ -77,13 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // 일기 항목 화면에 추가 함수
     function appendDiaryEntry(entry) {
         // 새로운 일기 항목 요소 생성
-        const diaryItem = document.createElement('div');
+        const diaryItem = document.createElement('article');
         diaryItem.className = 'post';
+        diaryItem.onclick = () => {
+            getData(diaryItem);
+        };
         diaryItem.innerHTML = `
-            <h6 class="title post-item">${entry.date}</h6>
+                    <h6 class="title post-item">${entry.date}</h6>
                     <img src="${entry.imageSrc}" alt="" class="post-img post-item">
-                    <p class="writing post-item">${entry.text}</p>
-        `;
+                    <p class="writing post-item">${entry.text}</p>`;
         // 일기 컨테이너에 추가
         diaryContainer.insertBefore(diaryItem, diaryContainer.lastChild);
     }
